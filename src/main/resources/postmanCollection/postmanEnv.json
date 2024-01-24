@@ -1,0 +1,15 @@
+{
+  "id": "c6904bfc-c35b-440a-b5bf-2fbe1f6cc900",
+  "name": "local user service",
+  "values": [
+    {
+      "key": "endpoint",
+      "value": "userService",
+      "type": "default",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment",
+  "_postman_exported_at": "2024-01-03T16:46:45.271Z",
+  "_postman_exported_using": "Postman/10.21.2"
+}

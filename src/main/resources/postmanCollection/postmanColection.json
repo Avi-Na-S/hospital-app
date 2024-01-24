@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "296802c7-ebb9-422a-af8d-3855058c7aef",
+    "name": "SanboxRestAP-locaI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "13841449"
+  },
+  "item": [
+    {
+      "name": "addUser",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 7,\r\n    \"name\": \"Avina\",\r\n    \"age\": 1,\r\n    \"work\": \"inProgress\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/{{endpoint}}/addUserDetails",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "{{endpoint}}",
+            "addUserDetails"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getUser",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/{{endpoint}}/getUserDetail/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "{{endpoint}}",
+            "getUserDetail",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateWork",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"age\": 9\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/{{endpoint}}/updateUserData/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "{{endpoint}}",
+            "updateUserData",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "daleteUser",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": \"010623\",\r\n    \"name\": \"Avina\",\r\n    \"age\": 1,\r\n    \"work\": \"inProgress\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/{{endpoint}}/deleteUser/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "{{endpoint}}",
+            "deleteUser",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

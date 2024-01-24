@@ -1,0 +1,12 @@
+spring:
+# DateBase config
+  datasource:
+    url: jdbc:mysql://localhost:3306/hospital_data?useSSL=false&serverTimeZone=UTC
+    username: root
+    password: AviNa
+
+#JPA Config
+  jpa.hibernate.ddl_auto: create #-> it will flush the table so when ever it build there will be no content
+  #jpa.hibernate.ddl_auto: update # it will keep the data as it's and update it
+
+  jackson: time-zone=Asia/Kolkata
